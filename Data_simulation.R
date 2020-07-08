@@ -24,12 +24,10 @@ e <- rnorm(n = g * n, mean = 0, sd = 1)
 aft_time <- exp(x1*init_b1+x2*init_b2 + init_clus +0.5 * e)
 censor_time <- runif(n = 100, min = 0, max = 25)
 
-#censoring status
+#survival time with censor_status and censoring rate
+time <- pmin(aft_time,censor_time)
 censor_status <- ifelse(censor_time <= time, 0, 1)
-
-#survival time with censoring rate
-time <- pmin(time,censor_time)
-censor_rate <- 1-sum(censor_status)/(g * n)
+censor_rate <- 1-sum(censor_status)/(g*n) 
 censor_rate
 
 #simulated data frame
