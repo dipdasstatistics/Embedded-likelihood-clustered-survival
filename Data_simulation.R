@@ -29,5 +29,8 @@ censor_status <- ifelse(censor_time <= time, 0, 1)
 
 #survival time with censoring rate
 time <- pmin(time,censor_time)
-censor_rate <- 1-sum(censor_status)/100 
+censor_rate <- 1-sum(censor_status)/(g * n)
 censor_rate
+
+#simulated data frame
+sim_dat <- data.frame(time, censor_status, x1, x2, init_clus)
