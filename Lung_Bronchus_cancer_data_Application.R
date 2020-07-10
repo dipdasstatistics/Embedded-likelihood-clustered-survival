@@ -256,7 +256,7 @@ loop_frail_ph <- NULL
 loop_frail_po <- NULL
 loop_frail_survreg <- NULL
 
-for(i in 1:10){
+for(i in 1:100){
   dat <- data_boot[sample(x = nrow(data_boot), size = nrow(data_boot), replace = T),]
   data <- dat[order(dat$seer_cluster),]
   loop_x1 <- data$seer_x1
