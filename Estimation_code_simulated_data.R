@@ -114,7 +114,7 @@ estimated_po <- function(x_1,x_2, time, status, cluster){
   par_po[,i+1]
 }
 
-#estimation of beta, beta2 using AFT-PH, AFT-PO and Survreg function
+#estimation of beta1, beta2 using AFT-PH, AFT-PO and Survreg function
 estimated_ph(x_1 = x1, x_2 = x2, time = time, status = censor_status, cluster = init_clus)
 estimated_po(x_1 = x1, x_2 = x2, time = time, status = censor_status, cluster = init_clus)
 survreg(Surv(time, censor_status)~ x1+ x2+ frailty(cluster, distribution = "gaussian"), dist = "lognormal")
