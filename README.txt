@@ -1,5 +1,5 @@
 Title:"Embedded Likelihood Function based Estimation under Accelerated Failure Time Models for Clustered Censored Data"
-Authors: Dip Das, Dr. Md. Hasinur Rahaman Khan, Dr. Dipankar Bandyopadhyay.
+Authors: Dip Das
 
 This folder contains 3 files:  
 
