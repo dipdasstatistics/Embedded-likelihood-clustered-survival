@@ -11,4 +11,4 @@ This folder contains 3 files:
 
 Contact:
 Dip Das
-E-mail:ddas@isrt.ac.bd
+E-mail:dip.das70453@gmail.com
